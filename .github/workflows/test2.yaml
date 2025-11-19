@@ -1,0 +1,25 @@
+name: File operations in GitHub
+
+on: push
+
+jobs:
+    files-operations:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: file creation
+              run: echo "The Lord Jesus Christ is my Saviour" > f1.txt
+
+            - name: display the content of the file
+              run: cat f1.txt
+              
+            - name: display the date
+              run: date
+              
+            - name: display the files and dirs
+              run: ls -ailsrth
+              
+            - name: display the print working directory
+              run: pwd
+            
+                
