@@ -1,1 +1,15 @@
 
+name: web demo workflow
+
+on: push
+
+jobs:
+    test-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Display Hello
+              run: echo "Hai Praveen, Jesus Christ loves you..."
+
+            - name: Display the date
+              run: date  
