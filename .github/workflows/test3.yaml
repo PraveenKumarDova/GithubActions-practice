@@ -1,0 +1,25 @@
+name: File operations with workflow_dispatch
+
+on: workflow_dispatch
+
+jobs:
+    files-operations:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: file creation
+              run: echo "The Lord Jesus Christ is my Saviour and HE saved me" > f2.txt
+
+            - name: display the content of the file
+              run: cat f2.txt
+              
+            - name: display the date
+              run: date
+              
+            - name: display the files and dirs
+              run: ls -ailsrth
+              
+            - name: display the print working directory
+              run: pwd
+            
+                
